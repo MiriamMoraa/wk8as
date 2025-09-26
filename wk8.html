@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASUBUHI - Professional Housekeeping Services</title>
+    <link rel="stylesheet" href="wk8.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">ASUBUHI</a>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
+                <li><a href="#" onclick="showPage('about')" class="nav-link">About</a></li>
+                <li><a href="#" onclick="showPage('contact')" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="page-content">
+                <div class="hero">
+                    <h1>ASUBUHI</h1>
+                    <p>Professional housekeeping services that bring cleanliness, comfort, and peace of mind to your home. We're here to make your mornings brighter.</p>
+                    <a href="#" onclick="showPage('contact')" class="cta-button">Get Free Quote</a>
+                    <a href="#" onclick="showPage('about')" class="cta-button">Learn More</a>
+                </div>
+
+                <div class="services-showcase">
+                    <div class="service-card">
+                        <div class="service-icon">🏠</div>
+                        <h3>Regular House Cleaning</h3>
+                        <p>Weekly, bi-weekly, or monthly cleaning services tailored to keep your home spotless and organized.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">✨</div>
+                        <h3>Deep Cleaning</h3>
+                        <p>Comprehensive cleaning that reaches every corner, perfect for seasonal cleaning or special occasions.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧹</div>
+                        <h3>Move-In/Move-Out</h3>
+                        <p>Thorough cleaning services for moving transitions, ensuring your new or former home is pristine.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏢</div>
+                        <h3>Office Cleaning</h3>
+                        <p>Professional commercial cleaning services to maintain a clean, productive work environment.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚿</div>
+                        <h3>Post-Construction</h3>
+                        <p>Specialized cleaning after renovations or construction to remove dust and debris safely.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌿</div>
+                        <h3>Eco-Friendly Options</h3>
+                        <p>Green cleaning solutions that are safe for your family, pets, and the environment.</p>
+                    </div>
+                </div>
+
+                <div class="testimonials-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-text">
+                            "ASUBUHI has transformed our home! Their attention to detail is incredible, and we love coming home to a spotless house every week."
+                        </div>
+                        <div class="testimonial-author">— Sarah M., Westlands</div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text">
+                            "Professional, reliable, and thorough. The ASUBUHI team goes above and beyond every single time. Highly recommend!"
+                        </div>
+                        <div class="testimonial-author">— John K., Karen</div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-text">
+                            "Their eco-friendly cleaning products give me peace of mind with young children at home. Excellent service!"
+                        </div>
+                        <div class="testimonial-author">— Grace W., Kilimani</div>
+                    </div>
+                    
+                    <button class="slider-controls prev" onclick="previousSlide()">‹</button>
+                    <button class="slider-controls next" onclick="nextSlide()">›</button>
+                </div>
+
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <div class="page-content">
+                <div class="about-intro">
+                    <h1>About ASUBUHI</h1>
+                    <p>Founded with a mission to bring professional housekeeping services to Nairobi homes and businesses, ASUBUHI means "morning" in Swahili — representing fresh starts, new beginnings, and the bright feeling of a clean, organized space.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Years of Service</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Trained Staff</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>🎯 Our Mission</h3>
+                        <p>To provide exceptional housekeeping services that give our clients more time to focus on what matters most to them, while maintaining the highest standards of cleanliness and professionalism.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>👥 Our Team</h3>
+                        <p>Our carefully selected and trained housekeepers are bonded, insured, and committed to excellence. Each team member undergoes thorough background checks and ongoing training.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>🌟 Quality Guarantee</h3>
+                        <p>We stand behind our work with a 100% satisfaction guarantee. If you're not completely happy with our service, we'll make it right or provide a full refund.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>🔒 Trust & Security</h3>
+                        <p>Your security is our priority. All staff are thoroughly vetted, bonded, and insured. We also use secure key management systems for your peace of mind.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>🌍 Eco-Conscious</h3>
+                        <p>We offer environmentally friendly cleaning products and methods that are safe for your family, pets, and the planet, without compromising on effectiveness.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>📱 Easy Booking</h3>
+                        <p>Schedule, reschedule, or manage your cleaning services easily through our online platform or by phone. Flexible scheduling to fit your lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <div class="page-content">
+                <div class="contact-intro">
+                    <h1>Contact ASUBUHI</h1>
+                    <p>Ready to experience the difference professional housekeeping can make? Get in touch for a free consultation and quote.</p>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Phone</strong><br>
+                                +254 700 123 456
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <strong>Email</strong><br>
+                                info@asubuhi.co.ke
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Service Areas</strong><br>
+                                Westlands, Karen, Kilimani, Lavington, Runda, Gigiri
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <strong>Business Hours</strong><br>
+                                Mon-Sat: 7:00 AM - 6:00 PM<br>
+                                Sun: 9:00 AM - 4:00 PM
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">⚡</div>
+                            <div>
+                                <strong>Emergency Service</strong><br>
+                                24/7 for urgent cleaning needs
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="error-message" id="nameError">Please enter your full name</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message" id="emailError">Please enter a valid email address</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="e.g., +254 700 123 456">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="regular">Regular House Cleaning</option>
+                                    <option value="deep">Deep Cleaning</option>
+                                    <option value="move">Move-In/Move-Out</option>
+                                    <option value="office">Office Cleaning</option>
+                                    <option value="construction">Post-Construction</option>
+                                    <option value="eco">Eco-Friendly Cleaning</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="location">Location/Area</label>
+                                <input type="text" id="location" name="location" placeholder="e.g., Westlands, Karen, etc.">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your cleaning needs, home size, preferred schedule, or any special requirements..." required></textarea>
+                                <div class="error-message" id="messageError">Please enter your message</div>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Request Free Quote</button>
+                            
+                            <div class="success-message" id="successMessage">
+                                Thank you for your inquiry! We'll contact you within 24 hours with a personalized quote and service details.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="wk8.js"></script>
+</body>
+</html>
